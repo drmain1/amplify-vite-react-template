@@ -1,0 +1,139 @@
+.ocr-form-processor {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.ocr-form-processor h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.file-upload {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.file-upload input[type="file"] {
+  display: block;
+  margin: 0 auto;
+  padding: 10px;
+  border: 1px dashed #ccc;
+  border-radius: 4px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.help-text {
+  font-size: 0.85em;
+  color: #666;
+  margin-top: 8px;
+}
+
+.loading {
+  text-align: center;
+  margin: 20px 0;
+  padding: 10px;
+  background-color: #e8f4fd;
+  border-radius: 4px;
+  color: #0066cc;
+}
+
+.error {
+  text-align: center;
+  margin: 20px 0;
+  padding: 10px;
+  background-color: #ffebee;
+  border-radius: 4px;
+  color: #d32f2f;
+}
+
+form {
+  margin-top: 20px;
+}
+
+.form-fields {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.form-field {
+  margin-bottom: 15px;
+}
+
+.form-field label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+  color: #333;
+}
+
+.form-field input {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.complex-fields {
+  margin-top: 30px;
+}
+
+.complex-field {
+  margin-bottom: 20px;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.complex-field h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #444;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 8px;
+}
+
+.complex-field ul {
+  padding-left: 20px;
+  margin: 0;
+}
+
+.complex-field li {
+  margin-bottom: 5px;
+}
+
+.submit-button {
+  display: block;
+  margin: 30px auto 0;
+  padding: 10px 24px;
+  background-color: #5046e4;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.submit-button:hover {
+  background-color: #3f36c7;
+}
+
+.submit-button:disabled {
+  background-color: #a8a8a8;
+  cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+  .form-fields {
+    grid-template-columns: 1fr;
+  }
+}

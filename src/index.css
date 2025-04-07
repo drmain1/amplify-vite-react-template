@@ -3,7 +3,7 @@ body {
   background: linear-gradient(180deg, rgb(117, 81, 194), rgb(255, 255, 255));
   display: flex;
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
   justify-content: center;
   align-items: center;
@@ -13,6 +13,68 @@ main {
   display: flex;
   flex-direction: column;
   align-items: stretch;
+  width: 90%;
+  max-width: 1000px;
+  min-height: 80vh;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+  margin: 40px 0;
+}
+
+.app-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.app-header h1 {
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+.toggle-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.toggle-buttons button {
+  background-color: #f0f0f0;
+  color: #333;
+  border: 1px solid #ddd;
+}
+
+.toggle-buttons button.active {
+  background-color: #5046e4;
+  color: white;
+  border-color: #3f36c7;
+}
+
+.todos-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.todos-container h2 {
+  margin-bottom: 15px;
+}
+
+.info-message {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  color: #555;
+  font-size: 0.9em;
+  line-height: 1.5;
 }
 
 button {
@@ -24,12 +86,15 @@ button {
   font-family: inherit;
   background-color: #1a1a1a;
   cursor: pointer;
-  transition: border-color 0.25s;
+  transition: all 0.2s ease;
   color: white;
 }
+
 button:hover {
   border-color: #646cff;
+  transform: translateY(-1px);
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
@@ -43,23 +108,50 @@ ul {
   display: flex;
   flex-direction: column;
   margin: 8px 0;
-  border: 1px solid black;
+  border: 1px solid #eee;
   gap: 1px;
-  background-color: black;
+  background-color: #f0f0f0;
   border-radius: 8px;
   overflow: auto;
+  max-height: 300px;
 }
 
 li {
   background-color: white;
-  padding: 8px;
+  padding: 12px;
+  border-bottom: 1px solid #f5f5f5;
+}
+
+li:last-child {
+  border-bottom: none;
 }
 
 li:hover {
-  background: #dadbf9;
+  background: #f7f7ff;
 }
 
 a {
-  font-weight: 800;
+  font-weight: 600;
   text-decoration: none;
+  color: #5046e4;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  main {
+    width: 95%;
+    margin: 20px 0;
+    padding: 15px;
+  }
+  
+  .app-header {
+    margin-bottom: 20px;
+  }
+  
+  .app-header h1 {
+    font-size: 1.5rem;
+  }
 }

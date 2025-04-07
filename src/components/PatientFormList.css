@@ -1,0 +1,154 @@
+.patient-form-list {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.patient-form-list h2 {
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+.no-forms {
+  text-align: center;
+  padding: 40px 0;
+  color: #666;
+  font-style: italic;
+}
+
+.form-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.form-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+}
+
+.form-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+}
+
+.form-card h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #333;
+  font-size: 1.2rem;
+}
+
+.form-card p {
+  margin: 8px 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.view-details-button {
+  background-color: #5046e4;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 12px;
+  font-size: 0.85rem;
+  margin-top: 12px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.view-details-button:hover {
+  background-color: #3f36c7;
+}
+
+/* Patient Form Details */
+.patient-form-details {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.patient-form-details h3 {
+  margin-top: 0;
+  color: #333;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.details-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.detail-row {
+  display: flex;
+  align-items: baseline;
+}
+
+.detail-label {
+  font-weight: 600;
+  margin-right: 8px;
+  color: #555;
+  min-width: 120px;
+}
+
+.detail-value {
+  color: #333;
+}
+
+.complex-section {
+  margin-bottom: 25px;
+}
+
+.complex-section h4 {
+  color: #444;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 8px;
+  margin-bottom: 12px;
+}
+
+.complex-section ul {
+  padding-left: 20px;
+  margin: 0;
+}
+
+.complex-section li {
+  margin-bottom: 6px;
+}
+
+.complex-section p {
+  margin: 8px 0;
+}
+
+.back-button {
+  background-color: #f0f0f0;
+  color: #333;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.back-button:hover {
+  background-color: #e4e4e4;
+}
+
+@media (max-width: 768px) {
+  .details-grid {
+    grid-template-columns: 1fr;
+  }
+}
